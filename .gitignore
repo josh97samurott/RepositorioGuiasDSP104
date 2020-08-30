@@ -1,0 +1,6 @@
+#Ignorando node_modules de carpetas
+guia03/Alumnos/node_modules
+guia03/Conversor/node_modules
+guia03/ejercicio1/node_modules
+guia03/ejercicio2/node_modules
+guia03/proyecto001/node_modules
