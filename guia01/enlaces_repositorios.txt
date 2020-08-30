@@ -1,6 +1,0 @@
-Enlace GuiaLabDPS: https://github.com/josh97samurott/GuiaLabDPS.git
-
-Enlace ManualGIT: https://github.com/josh97samurott/ManualGIT.git
-
-Enlace PruebasGIT: https://github.com/josh97samurott/PruebasGIT.git
-
