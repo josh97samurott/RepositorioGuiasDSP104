@@ -1,0 +1,76 @@
+/* You can add global styles to this file, and also import other style files */
+
+body{
+    background-color: gray;
+}
+
+.container{
+    background: white;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1%;
+    padding-bottom: 3%;
+    font-family: arial;
+}
+
+.table{
+    margin: 0 auto;
+    padding: 1%;
+    box-shadow: 10px 10px 10px black;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
+
+td, th{
+    padding: 1%;
+}
+
+
+.btn{
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #33D7FF;
+}
+
+.btn-danger{
+    background-color: #FF4633;
+}
+
+p{
+    font-size: 20px;
+}
+
+.text-danger{
+    font-size: 16px;
+    color: red;
+}
+
+.form-group{
+    background-color: #33FFCA;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding-bottom: 0.5px;
+    padding-top: 0.5px;
+    margin-top: 1%;
+}
+
+@media (max-width: 1024px){
+    .form-group{
+        width: 100%;
+    }
+}
+
+input{
+    padding: 1%;
+    font-family: arial;
+    font-size: 14px;
+}
+
