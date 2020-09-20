@@ -6,7 +6,7 @@ import { Product } from '../../../models/product';
 // service
 import { ProductService } from '../../../services/product.service';
 
-// toastr
+
 import { ToastrService } from 'ngx-toastr';
 
 @Component({
@@ -42,8 +42,7 @@ export class ProductListComponent implements OnInit {
      this.productList.push(x as Product);
   */
   ngOnInit() {
-    return this.productService.getProducts()
-      .snapshotChanges().subscribe(item => {
+    return this.productService.getProducts().snapshotChanges().subscribe(item => {
         this.productList = [];
         item.forEach(element => {
           let x = element.payload.toJSON();
