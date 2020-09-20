@@ -1,0 +1,55 @@
+
+
+
+
+
+<div class="card">
+    <div class="card-body">
+<!--
+<div class="card-title">
+    <h3>{{selectedAlumno.id == 0 ? "Agregar Nuevo Alumno" : "Actualizar Alumno"}}</h3>
+</div>
+
+-->
+  
+  <form action="" #productForm="ngForm" (ngSubmit)="onSubmit(productForm)">
+
+    <input type="hidden" name="$key" #$key="ngModel" [(ngModel)]="alumnoService.selectedAlumno.$key">
+
+    <div class="form-group">
+        <input type="text" [(ngModel)]="alumnoService.selectedAlumno.name" placeholder="Nombre"
+         class="form-control" name="name" #name="ngModel" id="nombre" pattern="[a-zA-Z ]{2,254}" required>
+        <p class="text-danger" *ngIf="name.invalid">Escriba su Nombre</p>
+    </div>
+    
+    <div class="form-group">
+        <input type="text" [(ngModel)]="alumnoService.selectedAlumno.lastname" placeholder="Apellido"
+        class="form-control" name="lastname" #lastname="ngModel" pattern="[a-zA-Z ]{2,254}" required>
+        <p class="text-danger" *ngIf="lastname.invalid">Escriba su Apellido</p>
+    </div>
+    
+    <div class="form-group">
+        <input type="text" [(ngModel)]="alumnoService.selectedAlumno.age" placeholder="Edad"
+        class="form-control" name="age" #age="ngModel" pattern="^[1-9][0-9]$" required>
+        <p class="text-danger" *ngIf="age.invalid">Escriba su Edad</p>
+    </div>
+    
+  
+
+
+    <div class="form-group">
+        <button class="btn btn-primary" type="submit">
+            <i class="fas fa-plus-circle"></i> Add A Alumn
+        </button>
+        <button class="btn btn-secondary" type="reset" (click)="resetForm(productForm)">
+            <i class="fas fa-sync-alt"></i> Reset
+        </button>
+    </div>
+
+
+  </form>
+  
+  
+
+  </div>
+  </div>
