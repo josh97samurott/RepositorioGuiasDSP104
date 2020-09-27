@@ -21,7 +21,7 @@
                     </div>
   
                     <div class="forgotPassword">
-                      <span routerLink="/forgot-password">Forgot Password?</span>
+                      <span class="btn btn-info" routerLink="/forgot-password">Forgot Password?</span>
                     </div>
   
                     <br>  
@@ -45,16 +45,33 @@
                         Log in with Google
                       </button>
                     </div>
+
+                    <br><br><br/>
+
+                    <!-- Calling FacebookAuth Api from AuthService -->
+                    <div class="form-group">
+                      <button type="button" class="btn btn-primary btn-lg float-left" (click)="authService.FacebookAuth()">
+                        <i class="fab fa-facebook-f"></i>
+                        Log in with Facebook
+                      </button>
+                    </div>
   
                     <br> <br>
-  
+
+                    <!-- Calling TwitterAuth Api from AuthService -->
+                    <div class="form-group">
+                      <button type="button" class="btn btn-primary btn-lg float-left" (click)="authService.TwitterAuth()">
+                        <i class="fab fa-twitter"></i>
+                        Log in with Twitter
+                      </button>
+                    </div>
   
                   </div>
   
-                  <br>
+                  <br> <br>
   
                   <div class="redirectToLogin">
-                    <span>Don't have an account?<span class="redirect" routerLink="/register-user"> Sign Up</span></span>
+                    <span>Don't have an account? &nbsp;<span class="btn btn-info redirect" routerLink="/register-user"> Sign Up</span></span>
                   </div>
                 </div>
               </div>

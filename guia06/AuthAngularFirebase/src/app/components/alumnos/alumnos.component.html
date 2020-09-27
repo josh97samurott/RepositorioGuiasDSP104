@@ -1,12 +1,9 @@
-<p>dashboard works!</p>
-
-<!-- Top navigation -->
 <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
     <a class="navbar-brand col-sm-3 col-md-2 mr-0">
       <img class="brand-logo" src="" alt="Logo">
     </a>
   </nav>
-  
+
   <!-- Sidebar navigation -->
   <div class="container-fluid">
     <div class="row">
@@ -14,8 +11,9 @@
       <nav class="col-md-2 d-md-block bg-light sidebar">
         <div class="sidebar-sticky">
           <ul class="nav flex-column">
+            <br><br>
             <li class="nav-item">
-              <a class="nav-link active">
+              <a class="nav-link active" routerLink="/dashboard">
                 <i class="fas fa-user"></i>User Profile
               </a>
             </li>
@@ -33,32 +31,33 @@
           </ul>
         </div>
       </nav>
-  
+
       <!-- Main content -->
       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
         <div class="inner-adjust">
-  
-          <div class="pt-3 pb-2 mb-3 border-bottom">
-            <h1 class="h2">User Profile</h1>
-          </div>
-          <!-- Show user data when logged in -->
-          <div class="row" *ngIf="authService.userData as user">
-            <div class="col-md-12">
-              <div class="media">
-                <img class="align-self-start mr-5 img-thumbnail rounded-circle" src="{{(user.photoURL) ? user.photoURL : '/assets/dummy-user.png'}}"
-                  alt="{{user.displayName}}">
-                <div class="media-body">
-                  <h1>Hello: <strong>{{(user.displayName) ? user.displayName : 'User'}}</strong></h1>
-                  <p>User ID: <strong>{{user.uid}}</strong></p>
-                  <p>Email: <strong>{{user.email}}</strong></p>
-                  <p>Email Verified: <strong>{{user.emailVerified}}</strong></p>
+            <br>
+            <div class="row">
+                <div class="col-md-8 mt-4">
+                     <app-alumno-list></app-alumno-list>
+                     <app-alumno></app-alumno>
                 </div>
-              </div>
-            </div>
+              
+                  <div class="col-md-4">
+                      <! -- md-4 espacio en blanco vertical -->
+                      <img width="300" alt="Angular Logo"
+                      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciI
+                      HZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuO
+                      SA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBma
+                      WxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzM
+                      HoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxM
+                      S43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwL
+                      jl6IiAvPgogIDwvc3ZnPg==">
+                  </div>
+               
           </div>
-  
         </div>
       </main>
-  
     </div>
-  </div>
+</div>
+
+

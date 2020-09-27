@@ -25,7 +25,8 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": []
           },
@@ -121,6 +122,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AuthAngularFirebase"
+    }
+  },
+  "defaultProject": "AuthAngularFirebase",
+  "cli": {
+    "analytics": false
+  }
 }
